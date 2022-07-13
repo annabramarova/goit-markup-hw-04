@@ -157,21 +157,6 @@ header {
   color: var(--accent-color);
 }
 
-.contacts-list .link::before {
-  display: block;
-  align-items: center;
-  content: "";
-  height: 16px;
-  background-image: url(../images/envelope.svg);
-  background-size: content;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.mail-link:before {
-  background-image: url(../images/envelope.svg);
-}
-
 /* hero */
 
 h1,
@@ -327,6 +312,9 @@ p {
 
 .section.team {
   background-color: var(--button-background);
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team-list {
@@ -480,6 +468,12 @@ p {
 .button-portfolio:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.button-portfolio:focus {
+  outline: none;
 }
 
 .footer {
