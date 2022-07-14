@@ -157,6 +157,23 @@ header {
   color: var(--accent-color);
 }
 
+.mail-link {
+  display: inline-flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.mail-link::before {
+  content: "";
+  background-image: url(../images/envelope.svg);
+}
+
+.phone-link {
+  display: inline-flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 /* hero */
 
 h1,
@@ -386,8 +403,13 @@ p {
   margin-bottom: 30px;
 }
 
-.projects-list .item:hover,
+.projects-list .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .projects-list .item:focus {
+  outline: none;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -515,4 +537,27 @@ p {
 .footer-list .link:hover,
 .footer-list .link:focus {
   color: var(--accent-color);
+}
+
+.media-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.media-container {
+  margin-left: 70px;
+}
+
+.social-media {
+  display: flex;
 }
