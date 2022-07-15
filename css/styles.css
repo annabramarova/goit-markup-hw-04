@@ -415,7 +415,8 @@ p {
   background-color: var(--background-footer-icons);
 }
 
-.media-link:hover {
+.media-link:hover,
+.media-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -427,19 +428,31 @@ p {
   margin-right: 30px;
 }
 
-.clients-icon {
+.clients-link {
+  display: block;
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
   fill: var(--clients-gray);
   outline: 1px solid var(--clients-gray);
   border-radius: 4px;
 }
 
+.clients-icon {
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  fill: var(--clients-gray);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  outline: 1px solid var(--accent-color);
+  fill: var(--accent-color);
+}
+
 .clients-icon:hover,
 .clients-icon:focus {
   fill: var(--accent-color);
-  outline: 1px solid var(--accent-color);
 }
 
 .menu {
