@@ -397,11 +397,13 @@ p {
   fill: var(--white-color);
 }
 
-.social-icon:hover {
+.social-icon:hover,
+.social-icon:focus {
   fill: var(--white-color);
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -434,7 +436,8 @@ p {
   border-radius: 4px;
 }
 
-.clients-icon:hover {
+.clients-icon:hover,
+.clients-icon:focus {
   fill: var(--accent-color);
   outline: 1px solid var(--accent-color);
 }
